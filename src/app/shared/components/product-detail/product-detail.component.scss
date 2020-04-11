@@ -46,9 +46,19 @@
     text-align: justify;
   }
   .view-cartlist {
-      text-decoration: underline;
-      text-align: end;
-      cursor: pointer;
-      color: rgb(32, 153, 253);
+    text-decoration: underline;
+    text-align: end;
+    cursor: pointer;
+    color: rgb(32, 153, 253);
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .product-detail {
+    .product-image {
+      img {
+        width: 100px;
+      }
+    }
   }
 }

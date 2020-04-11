@@ -35,3 +35,13 @@
     }
   }
 }
+
+@media only screen and (max-width: 414px) {
+  .product {
+    width: 88px !important;
+
+    img {
+      width: 60px !important;
+    }
+  }
+}

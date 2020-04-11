@@ -1,13 +1,21 @@
 .home-container {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 3fr 1fr;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 3fr 1fr;
 
-    .products {
-        grid-column: 1/2;
-    }
+  .products {
+    grid-column: 1/2;
+  }
 
-    .detail, .cart {
-        grid-column: 2/2;
-    }
+  .detail,
+  .cart {
+    grid-column: 2/2;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .home-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

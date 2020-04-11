@@ -1,10 +1,13 @@
 <div class="cart-item" *ngFor="let item of cartList">
-    <div class="counter">
-        {{item.orderedCount}}
-    </div>
-    <div class="product-image">
-        <img src="{{item.image}}" alt="">
-    </div>
+  <div class="counter">
+    {{ item.orderedCount }}
+  </div>
+  <div class="product-image">
+    <img src="{{ item.image }}" alt="" />
+  </div>
 </div>
-<br/>
-<div class="total">Total: <span class="total_value">${{total}}</span></div>
+<br />
+<div class="total">
+  Total: <span class="total_value">${{ total }}</span>
+</div>
+
