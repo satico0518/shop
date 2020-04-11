@@ -1,0 +1,28 @@
+.toolbar {
+  height: 60px;
+  margin: -8px;
+  display: flex;
+  align-items: center;
+  background-color: #737373;
+  color: white;
+  font-weight: 600;
+
+  img {
+    width: 40px;
+    margin: 0 16px;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .cart {
+    padding: 6px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+
+    img {
+      width: 25px;
+    }
+  }
+}

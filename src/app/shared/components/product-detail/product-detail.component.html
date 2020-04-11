@@ -1,0 +1,21 @@
+<p *ngIf="!product.image">Please choose a product on the left!</p>
+<div *ngIf="product.image" class="product-detail">
+  <div class="product-image">
+    <div *ngIf="productCount" class="counter">{{ productCount }}</div>
+    <img [src]="product.image" alt="" />
+  </div>
+  <div class="product-main">
+    <div>
+      {{ product.name }} -
+      <span class="product-price">${{ product.price }}</span>
+    </div>
+    <div class="buttons">
+      <div class="minus-button" (click)="removeProduct()">-</div>
+      <div class="plus-button" (click)="addProduct()">+</div>
+    </div>
+  </div>
+  <div class="product-description">
+    <p>{{ product.description }}</p>
+  </div>
+  <div class="view-cartlist" (click)="showCart()">view cart</div>
+</div>

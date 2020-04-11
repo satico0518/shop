@@ -1,0 +1,37 @@
+.product-grid {
+  display: flex;
+  flex-flow: wrap;
+  align-items: flex-end;
+  height: 68vh;
+  overflow-y: scroll;
+
+  .product {
+    width: 130px;
+    border: solid 2px gray;
+    padding: 5px;
+    margin: 10px;
+    font-family: monospace;
+    font-size: large;
+    font-style: italic;
+    cursor: pointer;
+
+    p {
+      margin-left: 5px;
+    }
+
+    img {
+      width: 120px;
+    }
+
+    .ordered-count {
+      background-color: #737373;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}

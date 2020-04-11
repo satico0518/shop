@@ -1,0 +1,10 @@
+<div class="product-grid">
+  <div *ngFor="let product of products | async" class="product" (click)="goToDetails(product)">
+    <div *ngIf="product.orderedCount" class="ordered-count">{{product.orderedCount}}</div>
+    <img src="{{ product.image }}" alt="" srcset="" />
+    <p>
+      {{ product.name }}<br />
+      ${{ product.price }}
+    </p>
+  </div>
+</div>

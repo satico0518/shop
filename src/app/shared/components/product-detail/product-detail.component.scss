@@ -1,0 +1,54 @@
+.product-detail {
+  .product-image {
+    .counter {
+      background-color: #737373;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      position: absolute;
+      margin: 10px;
+    }
+
+    img {
+      width: 200px;
+    }
+  }
+  .product-main {
+    display: grid;
+    font-weight: 700;
+    grid-template-columns: 80% 20%;
+
+    .buttons {
+      display: flex;
+      cursor: pointer;
+
+      .minus-button {
+        background-color: gainsboro;
+        padding: 0 8px;
+      }
+
+      .plus-button {
+        background-color: rgb(236, 30, 185);
+        padding: 0 8px;
+        color: white;
+      }
+    }
+
+    .product-price {
+      color: purple;
+    }
+  }
+  .product-description {
+    text-align: justify;
+  }
+  .view-cartlist {
+      text-decoration: underline;
+      text-align: end;
+      cursor: pointer;
+      color: rgb(32, 153, 253);
+  }
+}

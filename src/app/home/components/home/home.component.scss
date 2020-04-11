@@ -1,0 +1,13 @@
+.home-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 3fr 1fr;
+
+    .products {
+        grid-column: 1/2;
+    }
+
+    .detail, .cart {
+        grid-column: 2/2;
+    }
+}
