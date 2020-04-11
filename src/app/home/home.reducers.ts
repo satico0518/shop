@@ -39,8 +39,16 @@ export function homeReducer(
 
 function removeItem(cart: Product[], itemId: number): Product[] {
   if (cart.some((product) => product.id === itemId)) {
-    const itemToRemove = cart.filter((product) => product.id === itemId)[0];
-    cart.splice(cart.indexOf(itemToRemove), 1);
+      const product = cart.find(p => p.id === itemId);
+      const productIndex = cart.indexOf(product);
+      if (product.orderedCount > 0) {
+          const productCopy = {...cart[productIndex]};
+          productCopy.orderedCount -= 1;
+          cart.splice(productIndex, 1);
+          cart.push(productCopy);
+      } else {
+          cart.splice(productIndex, 1);
+      }
   }
   return cart;
 }

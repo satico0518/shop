@@ -30,7 +30,7 @@ export class ProductDetailComponent {
   }
 
   addProduct() {
-    this.product.orderedCount++;
+    this.product.orderedCount = ++this.productCount;
     this.store.dispatch(new AddProductAction(this.product));
   }
 
