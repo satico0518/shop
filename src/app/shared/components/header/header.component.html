@@ -3,6 +3,6 @@
   <div class="spacer"></div>
   <div class="cart" (click)="viewCart()" title="view cart list">
     <img src="assets/cart_logo.png" alt="">
-    ${{currentTotalPrice}}
+    {{currentTotalPrice | currency}}
   </div>
 </div>
