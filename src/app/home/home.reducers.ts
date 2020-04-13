@@ -41,7 +41,7 @@ function removeItem(cart: Product[], itemId: number): Product[] {
   if (cart.some((product) => product.id === itemId)) {
       const product = cart.find(p => p.id === itemId);
       const productIndex = cart.indexOf(product);
-      if (product.orderedCount > 0) {
+      if (product.orderedCount > 1) {
           const productCopy = {...cart[productIndex]};
           productCopy.orderedCount -= 1;
           cart.splice(productIndex, 1);

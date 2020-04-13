@@ -3,13 +3,10 @@
   margin: -8px;
   display: flex;
   align-items: center;
-  background-color: #737373;
-  color: white;
   font-weight: 600;
 
-  img {
+  .logo {
     width: 40px;
-    margin: 0 16px;
   }
 
   .spacer {
@@ -17,12 +14,15 @@
   }
 
   .cart {
-    padding: 6px 10px;
+    padding: 6px 20px;
     margin-right: 10px;
     cursor: pointer;
+    background-color: #a61abb;
+    color: white;
 
     img {
       width: 25px;
+      margin-right: 10px;
     }
   }
 }
